@@ -15,15 +15,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({super.key});
-
-  String currentFortune = "";
+  const MyHomePage({super.key});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -34,11 +32,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
   final _fortuneList = [
     "You will find a new friend",
-    "You will find a new friend tomorrow",
-    "A truly rich life contains love and art",
-    "A faithful friend is a strong defense",
-    "A fresh start will put you on your way",
-    "A friend asks only for your time not your money",
+    "You will have a great day",
+    "You will receive good news",
+    "You will achieve your goals",
+    "You will have a pleasant surprise",
+    "You will meet someone special",
+    "You will have a lucky day",
   ];
 
   void _randomFortune() {
